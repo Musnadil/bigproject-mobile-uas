@@ -2,7 +2,11 @@
     <string name="app_name">myUAS</string>
     <string name="navigation_drawer_open">Open Navigation Drawer</string>
     <string name="navigation_drawer_close">Close Navigation Drawer</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cara_pakai_aplikasi">
+        1. Untuk melihat riwayat kendaraan masuk anda bisa buka menu <b>Rekap</b> History. \n
+        2. Jika anda ingin keluar dari akun, anda bisa menekan tombol <b>Logout</b> pada menu. \n
+        3. Apabila anda ingin tahu lebih jelas tentang aplikasi ini anda bisa menekan tombol <b> Chatbot </b> pada menu.
+    </string>
 
 </resources>

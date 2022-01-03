@@ -5,12 +5,28 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.CaraPakaiFragment">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Carapakai"
-        android:textSize="30dp"
+        android:text="Petunjuk Penggunaan Aplikasi"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textpenjelasan"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textpenjelasan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cara_pakai_aplikasi"
+        android:textSize="16sp"
+        android:lineSpacingExtra="5dp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="40dp"
         android:textColor="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
