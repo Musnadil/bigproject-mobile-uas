@@ -22,7 +22,11 @@
         android:name="com.musnadil.myuas.Fragment.ChatbotFragment"
         tools:layout="@layout/fragment_beranda">
     </fragment>
-
+    <activity
+        android:id="@+id/nav_recap"
+        android:name="com.musnadil.myuas.Activities.RekapActivity"
+        android:label="History Recap"
+        tools:layout="@layout/activity_rekap" />
 
 
 </navigation>
