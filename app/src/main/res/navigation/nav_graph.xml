@@ -14,4 +14,15 @@
         android:name="com.musnadil.myuas.Fragment.CaraPakaiFragment"
         android:label="Cara Pakai Aplikasi"
         tools:layout="@layout/fragment_cara_pakai" />
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.musnadil.myuas.Activities.Logout"
+        />
+    <fragment android:id="@+id/nav_ChatBot"
+        android:name="com.musnadil.myuas.Fragment.ChatbotFragment"
+        tools:layout="@layout/fragment_beranda">
+    </fragment>
+
+
+
 </navigation>
