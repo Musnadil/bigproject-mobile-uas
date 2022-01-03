@@ -26,4 +26,13 @@ class ApiRetrofit {
                 .build()
             return retrofit.create(ApiEndpoint::class.java)
         }
+    fun getRetrofitClient(): Retrofit{
+        return Retrofit.Builder()
+            .baseUrl("http://192.168.43.189/bigproject/numplate/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+    }
+    fun getInstance():ApiEndpoint{
+        return getRetrofitClient().create(ApiEndpoint::class.java)
+    }
 }

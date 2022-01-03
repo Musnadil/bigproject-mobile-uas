@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MasukActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:src="@drawable/bg_masuk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--        logo poltek-->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_poltek"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="340dp"
+
+            >
+
+            <!--        text masuk-->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginEnd="65dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Masuk"
+                android:textColor="@color/graytext"
+                android:textSize="48sp"/>
+
+            <!--        Input text username-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nipyWrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginTop="10dp"
+                android:hint="NIPY"
+                android:textColorHint="@color/bluetext"
+                app:boxBackgroundColor="@color/transparent"
+                app:errorEnabled="true"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNipy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--        Input text password-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordWrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginTop="10dp"
+
+                app:endIconMode="password_toggle"
+                android:hint="Password"
+                android:textColorHint="@color/bluetext"
+                app:boxBackgroundColor="@color/transparent"
+                app:errorEnabled="true"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--        Button masuk-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_masuk"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="65dp"
+                android:backgroundTint="@color/bluesky"
+                android:fontFamily="@font/roboto_medium"
+
+                android:text="Masuk"
+                android:textSize="15dp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,10 +21,9 @@ class Logout : AppCompatActivity() {
             }
             setPositiveButton("Logout"){dialog,which->
                 dialog.dismiss()
-                startActivity( Intent(this@Logout,SplashScreenActivity::class.java))
+                startActivity( Intent(this@Logout,MasukActivity::class.java))
                 onStop()
                 finish()
-                onDestroy()
             }
         }
         dialog_konfirmasi.show()
