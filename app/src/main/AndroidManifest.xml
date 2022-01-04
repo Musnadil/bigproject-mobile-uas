@@ -20,9 +20,6 @@
             android:name=".Activities.RekapActivity"
             android:exported="true" />
         <activity
-            android:name=".Activities.LoginActivity"
-            android:exported="true" />
-        <activity
             android:name=".Activities.Logout"
             android:exported="true" />
         <activity
